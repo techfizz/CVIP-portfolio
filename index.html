@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radhika's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=League+Spartan:wght@200;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
+<body>
+    <div class="nav">
+        <label class="logo"><span>Radhika S</span></label>
+        <ul>
+            <li><a href="#" class="rem">Home</a></li>
+            <li><a href="#about"class="rem">About me</a></li>
+            <li><a href="#skills"class="rem">Skills</a></li>
+            <li><a href="#contact"class="rem">Contact me</a></li>
+        </ul>
+        <span id="master" class="material-symbols-outlined master">
+            menu
+            </span>
+    </div>
+    <div class="container" id="home">
+        <div class="detail">
+            <h1>Hi , I'm <span>Radhika S</span></h1>
+            <p>A Professional web and App developer.</p>
+        </div>
+        <div class="personal-img">
+            <img class="persona" src="radhika.jpg" alt="personal-img" >
+        </div>
+    </div>
+<!-- About section -->
+<div class="about" id="about">
+
+            <h1 class="head">About</h1>
+            <div class="desti">
+                <p class="del">Hey there! I'm Radhika, a second-year engineering student who's all about web development. I love creating sleek and functional websites. Whether it's coding in HTML, CSS, or diving into JavaScript, I'm passionate about making the web more awesome. Let's chat tech, web, or anything exciting in the digital world!</p>
+            </div>
+    </div>
+</div>
+<!-- skill section  -->
+<h1 class="skihead" id="skills">Skills</h1>
+<div class="Skills">
+   
+    <div class="box">
+        <h1>HTML</h1>
+        <p> Infusing enthusiasm into every line of HTML code, I take pride in creating web experiences that are both technically impeccable and visually stunning.I thrive on utilizing HTML as a canvas to transform ideas into interactive and engaging digital realities.</p>
+    </div>
+    <div class="box">
+        <h1>CSS</h1>
+        <p>I'm a CSS enthusiast with a passion for making websites visually stunning and user-friendly. CSS is my canvas for transforming web design ideas into reality. Let's chat about web aesthetics and the power of CSS in shaping the digital experience!</p>
+    </div>
+    <div class="box">
+        <h1>JS</h1>
+        <p>I'm a JavaScript enthusiast, turning static web pages into dynamic experiences. JS is my toolkit for interactivity, from animations to complex functionality. Let's dive into the world of web development and the magic of JavaScript!</p>
+    </div>
+</div>
+    <div class="contact" id="contact">
+        <h1>Contact me</h1>
+    </div>
+    <div class="items-con">
+         <button class="items"><a href="https://github.com/techfizz">Github</a></button>
+       <button class="items"><a href="radhikasenthilkumar36@gmail.com">Email</a></button>
+         <button class="items"><a href="tellto:+919361677558">Call</a></button>
+    </div>
+<footer>
+    <p>Developed by Radhika!</p>
+</footer>
+    
+
+
+<script>
+  var best = document.getElementById("master");
+  best.addEventListener("click",function(){
+    navis();
+  })
+
+
+
+  function navis(){
+   var honey = document.getElementsByTagName("ul")[0].classList ;
+   honey.toggle("navi");
+    var tost = document.getElementsByClassName("rem").classList;
+   for (i=0;i<4;i++){
+    var hest = document.getElementsByClassName("rem")[i].addEventListener("click",function(){
+    document.getElementsByTagName("ul")[0].classList.remove("navi");
+   });
+   }
+   
+  }
+
+</script>
+</body>
+</html>
